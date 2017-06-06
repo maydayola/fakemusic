@@ -1,2 +1,1 @@
-# fakemusic
-learn use git 
+一切才刚刚开始。。。
