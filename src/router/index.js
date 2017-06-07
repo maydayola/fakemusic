@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 
 import play from '@/components/play/play.vue'
+import playing from '@/components/playing/playing.vue'
 import content from '@/components/content/content'
 
 
@@ -50,8 +51,8 @@ export default new Router({
       ]
     },
     {
-      path: '/play',
-      component: play
+      path: '/playing',
+      component: playing
     },
     
   ]

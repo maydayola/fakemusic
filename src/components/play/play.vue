@@ -1,5 +1,5 @@
 <template>
-  <div v-if='cur_item' class="play">
+<div v-if='cur_item' class="play" @click='goPlaying'>
   <div class="pic">
     <img src="./pic.jpg"  alt="">
   </div>
@@ -32,7 +32,9 @@ export default {
     }
   },
   methods:{
-    
+    goPlaying(){
+      this.$router.push({ path:'/playing' })
+    }
   },
 }
 </script>

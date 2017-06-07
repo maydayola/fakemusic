@@ -7,18 +7,16 @@
     <div class="body">
       <router-view></router-view>
     </div>
-    <vplaying></vplaying>
   </div>
 </template>
 
 <script>
 require('./common/reset.css')
-import vplaying from "./components/playing/playing.vue"
 export default {
   name: 'app',
 
   components:{
-    vplaying
+    
   }
 }
 </script>
