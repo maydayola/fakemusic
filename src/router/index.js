@@ -5,7 +5,7 @@ import Router from 'vue-router'
 import play from '@/components/play/play.vue'
 import playing from '@/components/playing/playing.vue'
 import content from '@/components/content/content'
-
+import notFound from '@/components/content/notFound'
 
 
 import new_list from '@/components/content/new/new.vue'
@@ -13,6 +13,9 @@ import collect from '@/components/content/collect/collect'
 import list from '@/components/content/list/list'
 import search from '@/components/content/search/search'
 import singer from '@/components/content/singer/singer'
+
+
+
 
 
 Vue.use(Router)
@@ -54,6 +57,10 @@ export default new Router({
       path: '/playing',
       component: playing
     },
+    {
+      path:"*",
+      component: notFound
+    }
     
   ]
 })
