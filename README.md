@@ -18,7 +18,7 @@
   然后重复上面步骤
 
 
-* 或者 在线预览地址 https://maydayola.github.io
+* 或者 在线预览地址 http://jokker.yabi.me
 
 
 
@@ -33,4 +33,3 @@
  数据库本来想用mongodb 发现实现有点繁琐<br>
  主要是express后端路由的实现 以及环境搭建<br>
 
- adding音乐的api.... 
