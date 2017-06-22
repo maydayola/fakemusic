@@ -18,7 +18,7 @@
   然后重复上面步骤
 
 
-* 或者 在线预览地址 http://jokker.yabi.me
+* 或者 在线预览地址 maydayola.github.io
 
 
 
