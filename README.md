@@ -31,8 +31,5 @@
      。。。<br>
  而vuex也是强行加进去的<br>
  数据库本来想用mongodb 发现实现有点繁琐<br>
- 主要是express后端路由的实现 以及环境搭建<br>
+ 于是就用express static文件做数据库，and提供接口<br>
 
-
-
-### test git    ###
