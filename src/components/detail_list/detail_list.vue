@@ -98,9 +98,6 @@
 	    box-sizing: border-box;
 	    transform-origin: 33.3% 33.3%;
 	    transform: rotate(135deg);
-	    -webkit-box-sizing: border-box;
-	    -webkit-transform-origin: 33.3% 33.3%;
-	    -webkit-transform: rotate(135deg);
 	}
 	img{
 		display: block;

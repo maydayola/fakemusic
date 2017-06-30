@@ -33,7 +33,7 @@ export default {
     box-shadow: 0 2px 3px rgba(0,0,0,.2);
     background-color: rgba(249,249,249,.6);
     background-image: linear-gradient(to bottom,rgba(249,249,249,.8),rgba(235,235,235,.8));
-    display: -webkit-box;
+    display: flex;
     font-size: 1.6rem;
     .item{
       flex: 1;
