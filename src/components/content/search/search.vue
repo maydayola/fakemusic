@@ -29,7 +29,7 @@
 			var vm = this;
 			vm.$http.get('/static/json/search_hot_list.json')
 					.then( res => {
-						vm.list = res.body
+						vm.list = res.data
 						//console.log(res.body);
 					})
 		},

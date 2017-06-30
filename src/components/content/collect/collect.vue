@@ -20,7 +20,7 @@
 			var vm = this;
 			vm.$http.get('/static/json/competitive.json')
 					.then( res => {
-						vm.list = res.body
+						vm.list = res.data
 						//console.log(res.body);
 					})
 		},

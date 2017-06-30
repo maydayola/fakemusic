@@ -24,17 +24,47 @@ var app = express()
 
 
 //设置后端路由
-// var apiRouter = express.Router()
-// var data_New_list = require('../static/new_list.json')
 
-// apiRouter.get('/data_new_list',function(req,res){
-//   res.send(data_New_list)
-// })
+// var appData = require('../data.json');
+// var seller = appData.seller;
+// var goods = appData.goods;
+// var ratings = appData.ratings;
 
-// app.use('/api', apiRouter)
+// var apiRoutes = express.Router();
+
+// apiRoutes.get('/seller', function (req, res) {
+//   res.json({
+//     errno: 0,
+//     data: seller
+//   });
+// });
+
+// apiRoutes.get('/goods', function (req, res) {
+//   res.json({
+//     errno: 0,
+//     data: goods
+//   });
+// });
+
+// apiRoutes.get('/ratings', function (req, res) {
+//   res.json({
+//     errno: 0,
+//     data: ratings
+//   });
+// });
+
+// app.use('/api', apiRoutes);
+//设置后端路由
 
 //也可以直接设置静态资源目录 直接可以请求
 express.static('../static/') 
+
+
+
+
+
+
+
 
 
 var compiler = webpack(webpackConfig)

@@ -24,7 +24,8 @@
 			var vm = this;
 			vm.$http.get('/static/json/new_list.json')
 					.then( res => {
-						vm.list = res.body
+						// console.log(res)
+						vm.list = res.data
 					})
 		},
 		components:{
