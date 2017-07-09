@@ -17,16 +17,17 @@
 		data(){
 			return {
 
-				list:''
+				list:[]
 			}
 		},
-		created(){
+		mounted:function(){
 			var vm = this;
-			vm.$http.get('/static/json/new_list.json')
-					.then( res => {
-						// console.log(res)
-						vm.list = res.data
-					})
+			vm.$nextTick( function(){
+				vm.updateList()
+			} )
+
+
+
 		},
 		components:{
 			banner,play,detail_list
@@ -35,8 +36,15 @@
 		computed:{
 		    
 		},
-		mounted(){
-			
+		methods:{
+			updateList(){
+				var vm = this;
+				vm.$http.get('/static/json/new_list.json')
+						.then( res => {
+							// console.log(res)
+							vm.list = res.data
+						})
+			}
 		}
 	}
 </script>

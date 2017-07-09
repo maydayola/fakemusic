@@ -6,7 +6,7 @@
         <div class="tt">{{cur_item.song_name}}</div>
       </div>
       <section>
-        <p>music is playing...</p>
+        <p>假装 music is playing...</p>
       </section>
     </div>
   
@@ -53,9 +53,7 @@ export default {
   background-color: rgba(200,200,200,.9);
   z-index: 10000000000;
   .back{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-box;
+    display: flex;
     background-color: rgba(249,249,249,.5);
     cursor: pointer;
     position: absolute;
@@ -102,6 +100,7 @@ export default {
       text-align: center;
       -webkit-box-sizing: border-box;
       margin-left: -4rem;
+      font-size: 3rem;
     }
 
   }
