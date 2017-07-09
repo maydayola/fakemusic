@@ -28,6 +28,8 @@ export default {
   store:store,
   computed:{
     cur_item(){
+      var vm = this;
+      
       return (store.state.cur_item)
     }
   },

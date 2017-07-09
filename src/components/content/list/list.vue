@@ -13,7 +13,7 @@
 		data(){
 			return {
 
-				list:''
+				list:[]
 			}
 		},
 		created(){

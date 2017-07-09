@@ -33,7 +33,7 @@
 	export default {
 		data(){
 			return {
-
+				
 			}
 		},
 		store:store,
@@ -42,19 +42,25 @@
 			changeClass(index){
 				var vm = this;
 				for (var i = 0; i < vm.list.length; i++) {
-						vm.list[i]['state']='';
+						vm.$set(vm.list[i],'state','')
+						//vm.list[i]['state']='';
 				}
-				vm.list[index]['state'] = 'current';
-				
+				vm.$set(vm.list[index],'state','current')
 
+
+				// vm.list[index]['state'] = 'current';
+				
 				vm.changeItem(vm.list[index])
-				//console.log(store.state.cur_item + 'from new');				
+
+				// console.log(store.state.cur_item['state'] + 'from new');				
 			},
 			...mapActions({
 		      changeItem: 'CHANGE_ITEM' // 映射 this.changeItem() 为 this.$store.dispatch('CHANGE_ITEM')
 		    })
 		    
 		},
+		mounted(){
+		}
 	}
 </script>
 
